@@ -1,27 +1,28 @@
 {
-  "name": "unhassle",
-  "version": "1.0.0",
-  "description": "simple customer, sales and invoicing manager",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amitchanchal/unhassle.git"
-  },
-  "keywords": [
-    "invoicing",
-    "CRM",
-    "microenterprise"
-  ],
-  "author": "amit chanchal",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/amitchanchal/unhassle/issues"
-  },
-  "homepage": "https://github.com/amitchanchal/unhassle#readme",
-  "dependencies": {
-    "electron": "^1.7.9"
-  }
+    "name": "unhassle",
+    "version": "1.0.0",
+    "description": "simple customer, sales and invoicing manager",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "electron ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/amitchanchal/unhassle.git"
+    },
+    "keywords": [
+        "invoicing",
+        "CRM",
+        "microenterprise"
+    ],
+    "author": "amit chanchal",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/amitchanchal/unhassle/issues"
+    },
+    "homepage": "https://github.com/amitchanchal/unhassle#readme",
+    "dependencies": {
+        "electron": "^1.7.9"
+    }
 }
