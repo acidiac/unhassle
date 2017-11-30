@@ -5,20 +5,36 @@ const path = require('path');
 const url = require("url");
 
 //declaring a window
-let win;
+let winOne, winTwo;
+
+// just testing
+console.log("from the main process");
 
 function createWindow() {
     // new browser window instance
-    win = new BrowserWindow();
+    winOne = new BrowserWindow();
+    winTwo = new BrowserWindow();
     // Loading an html file in the window
-    win.loadURL(url.format({
-        pathname: path.join(__dirname, 'index.html'),
+    winOne.loadURL(url.format({
+        pathname: path.join(__dirname, 'one.html'),
         protocol: 'file',
         slashes: true
     }));
 
+    winTwo.loadURL(url.format({
+        pathname: path.join(__dirname, 'two.html'),
+        protocol: 'file',
+        slashes: true
+    }));
+
+    // Dev console
+    winOne.webContents.openDevTools();
+    winTwo.webContents.openDevTools();
     //handling when user closes the window
-    win.on('closed', () => {
+    winOne.on('closed', () => {
+        win = null;
+    });
+    winTwo.on('closed', () => {
         win = null;
     });
 }
