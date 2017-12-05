@@ -6,11 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <title>UnHassLe</title>
 </head>
 
 <body>
-    hey there
+    <div class="container">
+        <div class="row">
+            <h2> Add User</h2>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Full Name" id="full_name" name="fullName" type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Email" name="email" id="email" type="email">
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Institute/Company/Organization" name="org" id="org" type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="switch">
+                        <label>
+                                  Is a student: No
+                                  <input type="checkbox" name="student">
+                                  <span class="lever"></span>
+                                  Yes
+                                </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <button type="sumbit">Add User</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+
 
     <script>
         require('./index.js');

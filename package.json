@@ -23,6 +23,7 @@
     },
     "homepage": "https://github.com/amitchanchal/unhassle#readme",
     "dependencies": {
-        "electron": "^1.7.9"
+        "electron": "^1.7.9",
+        "nedb": "^1.8.0"
     }
 }
